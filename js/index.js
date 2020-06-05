@@ -19,7 +19,7 @@ $(function(){
 
 		tdCodigo.html(tdCodigo.children("input[type=text]").val());
 		tdNome.html(tdNome.children("input[type=text]").val());
-		tdBotoes.html("<img src='img/delete.png'class='btnExcluir'/><img src='img/pencil.png' class='btnEditar'/>");
+		tdBotoes.html("<img src='img/delete.png'class='btnExcluir'/>");
 
 		$(".btnEditar").bind("click", Editar);
 		$(".btnExcluir").bind("click", Excluir);
