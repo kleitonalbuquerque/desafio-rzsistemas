@@ -8,6 +8,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
   <style>
     nav {
       margin-top: auto;
@@ -48,6 +57,65 @@
 
     #sticky-footer {
       flex-shrink: none;
+    }
+
+    .info {
+      display: inline-block;
+      position: relative;
+    }
+
+    .info #confeccao {
+      position: absolute;
+      top: 60px;
+      right: 150px;
+      font-size: 20px;
+      color: black;
+      text-shadow: 0px 0px 5px black;
+    }
+
+    .info #lojas {
+      position: absolute;
+      top: 60px;
+      right: 125px;
+      font-size: 20px;
+      color: black;
+      text-shadow: 0px 0px 5px black;
+    }
+
+    .info #dist {
+      position: absolute;
+      top: 60px;
+      right: 130px;
+      font-size: 20px;
+      color: black;
+      text-shadow: 0px 0px 5px black;
+    }
+
+    .info #cad {
+      position: absolute;
+      top: 60px;
+      right: 150px;
+      font-size: 20px;
+      color: black;
+      text-shadow: 0px 0px 5px black;
+    }
+
+    .info #plotter {
+      position: absolute;
+      top: 60px;
+      right: 140px;
+      font-size: 20px;
+      color: black;
+      text-shadow: 0px 0px 5px black;
+    }
+
+    .info #venda {
+      position: absolute;
+      top: 60px;
+      right: 160px;
+      font-size: 20px;
+      color: black;
+      text-shadow: 0px 0px 5px black;
     }
   </style>
 </head>
@@ -99,8 +167,44 @@
         <div style="margin-left: 10px; margin-top: 80px;" class="container">
           <div class="row">
             <div class="col-sm">
-              <div class="container">
+              <div class="container info">
                 <img style="margin-left: 20px;" width="60%" src="img/erp-para-confeccao-icon.svg" alt="">
+                <!-- Aciona modal -->
+                <label id="confeccao" data-toggle="modal" data-target="#ModalCentralizadoConfeccao">Informações</label>
+                <!-- Modal -->
+                <div class="modal fade" id="ModalCentralizadoConfeccao" tabindex="-1" role="dialog"
+                  aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title" id="TituloModalCentralizado" style="margin-left: 100px;">Erp para
+                          Confecção</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img style="margin-left: 120px;" width="40%" src="img/erp-para-confeccao-icon.svg" alt="">
+                        <span class="text-justify">
+                          <p style="font-weight: 300; font-size: 1rem; line-height: 1.6; margin-bottom: 1.25rem;">
+                            Nosso Erp para Confecção ajuda grandes confecções no Brasil a serem mais eficientes e
+                            rentáveis,
+                            veja como sua confecção pode ser ágil e eficiente, controle sua empresa desde a formação do
+                            preço de
+                            venda,
+                            entrada de pedidos , monitore todos os processos para elaboração da peça final como corte,
+                            enfesto,
+                            facções e expedição.
+                          </p>
+                        </span>
+                      </div>
+                      <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button> -->
+                        <!-- <button type="button" class="btn btn-primary">Salvar mudanças</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <span>
                   <strong style="color: #073f89; font-size: 22px;">
                     <p>Erp para Confecção</p>
@@ -118,8 +222,40 @@
               </div>
             </div>
             <div class="col-sm">
-              <div class="container">
-                <img width="60%" src="img/erp-rede-de-lojas-icon.svg" alt="" srcset="">
+              <div class="container info">
+                <img width="60%" src="img/erp-rede-de-lojas-icon.svg" alt="Erp para Lojas" style="margin-left: 50px;">
+                <label id="lojas" data-toggle="modal" data-target="#ModalCentralizadoLojas">Informações</label>
+                <!-- Modal -->
+                <div class="modal fade" id="ModalCentralizadoLojas" tabindex="-1" role="dialog"
+                  aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title" id="TituloModalCentralizado" style="margin-left: 130px;">Erp para Lojas</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img width="40%" src="img/erp-rede-de-lojas-icon.svg" style="margin-left: 130px;" alt=""
+                          srcset="">
+                        <span class="text-justify">
+                          <p style="font-weight: 300; font-size: 1rem; line-height: 1.6; margin-bottom: 1.25rem;">
+                            Nosso sistema ERP é ideal para lojas que exigem controle e praticidade,
+                            permite o controle de varias lojas permitindo separar estoque por filial,
+                            controlar movimento financeiro consolidado ou separado por loja de maneira pratica e
+                            eficiente,
+                            é possível fazer integração com fabricas, funciona na Nuvem ou local.
+                          </p>
+                        </span>
+                      </div>
+                      <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button> -->
+                        <!-- <button type="button" class="btn btn-primary">Salvar mudanças</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <span>
                   <strong style="color: #073f89; font-size: 22px;">
                     <p>Erp para Lojas</p>
@@ -136,11 +272,42 @@
               </div>
             </div>
             <div class="col-sm">
-              <div class="container">
-                <img width="60%" src="img/sistema-para-distribuidoras-icon.svg" alt="" srcset="">
+              <div class="container info">
+                <img width="60%" src="img/sistema-para-distribuidoras-icon.svg" alt="Sistema para Distribuidora" style="margin-left: 40px;" >
+                <label id="dist" data-toggle="modal" data-target="#ModalCentralizadoDist">Informações</label>
+                <!-- Modal -->
+                <div class="modal fade" id="ModalCentralizadoDist" tabindex="-1" role="dialog"
+                  aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title" id="TituloModalCentralizado" style="margin-left: 130px;">Sistema para
+                          Distribuidora</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img width="40%" src="img/sistema-para-distribuidoras-icon.svg" alt="" style="margin-left: 130px;">
+                        <span class="text-justify">
+                          <p style="font-weight: 300; font-size: 1rem; line-height: 1.6; margin-bottom: 1.25rem;">
+                            Nosso sistema ERP para distribuidoras fornece soluções práticas para gestão diária de uma
+                            distribuidora, como automação da digitação de pedidos, controle financeiro, rotas de entrega, 
+                            controle financeiro total, gestão do estoque, automação do faturamento, 
+                            alem dos complicados cálculos de ICMS substituto.
+                          </p>
+                        </span>
+                      </div>
+                      <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button> -->
+                        <!-- <button type="button" class="btn btn-primary">Salvar mudanças</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <span>
                   <strong style="color: #073f89; font-size: 22px;">
-                    <p>Erp para Confecção</p>
+                    <p>Sistema para Distribuidora</p>
                   </strong>
                 </span>
                 <span class="text-justify">
@@ -162,8 +329,37 @@
         <div style="margin-left: 10px; margin-top: 80px;" class="container">
           <div class="row">
             <div class="col-sm">
-              <div class="container">
+              <div class="container info">
                 <img style="margin-left: 20px;" width="60%" src="img/cad-para-confeccao-icon.svg" alt="">
+                <label id="cad" data-toggle="modal" data-target="#ModalCentralizadoCad">Informações</label>
+                <!-- Modal -->
+                <div class="modal fade" id="ModalCentralizadoCad" tabindex="-1" role="dialog"
+                  aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title" id="TituloModalCentralizado" style="margin-left: 90px;">CAD para Confecção</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img width="40%" src="img/cad-para-confeccao-icon.svg" alt="CAD para Confecção" style="margin-left: 130px;">
+                        <span class="text-justify">
+                          <p style="font-weight: 300; font-size: 1rem; line-height: 1.6; margin-bottom: 1.25rem;">
+                            RZ CAD Têxtil é o CAD para confecção ideal, tem a melhor relação custo benefício do mercado,
+                            possui praticamente todas as funções dos Softwares concorrentes como Audaces Vestuário,
+                            Lectra e Gerber, por um preço mais acessível, além disso ele é desenvolvido 100% no Brasil.
+                          </p>
+                        </span>
+                      </div>
+                      <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button> -->
+                        <!-- <button type="button" class="btn btn-primary">Salvar mudanças</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <span>
                   <strong style="color: #073f89; font-size: 22px;">
                     <p>CAD para Confecção</p>
@@ -179,8 +375,37 @@
               </div>
             </div>
             <div class="col-sm">
-              <div class="container">
-                <img width="60%" src="img/plotter-para-confeccao-icon.svg" alt="" srcset="">
+              <div class="container info">
+                <img style="margin-left: 30px;" width="60%" src="img/plotter-para-confeccao-icon.svg" alt="" srcset="">
+                <label id="plotter" data-toggle="modal" data-target="#ModalCentralizadoPlot">Informações</label>
+                <!-- Modal -->
+                <div class="modal fade" id="ModalCentralizadoPlot" tabindex="-1" role="dialog"
+                  aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title" id="TituloModalCentralizado" style="margin-left: 90px;">CAD para Confecção</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img style="margin-left: 130px;" width="40%" src="img/plotter-para-confeccao-icon.svg" alt="CAD para Confecção">
+                        <span class="text-justify">
+                          <p style="font-weight: 300; font-size: 1rem; line-height: 1.6; margin-bottom: 1.25rem;">
+                            RZ CAD Têxtil é o CAD para confecção ideal, tem a melhor relação custo benefício do mercado,
+                            possui praticamente todas as funções dos Softwares concorrentes como Audaces Vestuário,
+                            Lectra e Gerber, por um preço mais acessível, além disso ele é desenvolvido 100% no Brasil.
+                          </p>
+                        </span>
+                      </div>
+                      <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button> -->
+                        <!-- <button type="button" class="btn btn-primary">Salvar mudanças</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <span>
                   <strong style="color: #073f89; font-size: 22px;">
                     <p>Plotter para Confecção</p>
@@ -196,8 +421,38 @@
               </div>
             </div>
             <div class="col-sm">
-              <div class="container">
-                <img width="60%" src="img/venda-a-pronta-entrega-icon.svg" alt="" srcset="">
+              <div class="container info">
+                <img width="60%" src="img/venda-a-pronta-entrega-icon.svg" alt="Venda a Pronta Entrega" style="margin-left: 40px;">
+                <label id="venda" data-toggle="modal" data-target="#ModalCentralizadoVenda">Informações</label>
+                <!-- Modal -->
+                <div class="modal fade" id="ModalCentralizadoVenda" tabindex="-1" role="dialog"
+                  aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title" id="TituloModalCentralizado" style="margin-left: 90px;">Venda a Pronta Entrega</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <img width="40%" src="img/venda-a-pronta-entrega-icon.svg" alt="Venda a Pronta Entrega" style="margin-left: 140px;">
+                        <span class="text-justify">
+                          <p style="font-weight: 300; font-size: 1rem; line-height: 1.6; margin-bottom: 1.25rem;">
+                            Vender a pronta entrega requer mais que apenas um solução eficiente de força de vendas,
+                            requer a gerencia de todo o processo para controle de estoque,
+                            geração de notas fiscais de transferência e devolução dos caminhões ou vendedores,
+                            alem da emissão da nota fiscal para o cliente final.
+                          </p>
+                        </span>
+                      </div>
+                      <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button> -->
+                        <!-- <button type="button" class="btn btn-primary">Salvar mudanças</button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <span>
                   <strong style="color: #073f89; font-size: 22px;">
                     <p>Venda a Pronta Entrega</p>
