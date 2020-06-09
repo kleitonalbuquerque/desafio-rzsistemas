@@ -17,6 +17,70 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $('#hide').click(function () {
+        $('#esconde').hide();
+        $('#show').removeAttr('hidden');
+      });
+
+      $('#show').click(function() {
+        $('#esconde').show();
+        $('#show').hide();
+      });
+
+      $('#hide2').click(function () {
+        $('#esconde2').hide();
+        $('#show2').removeAttr('hidden');
+      });
+
+      $('#show2').click(function() {
+        $('#esconde2').show();
+        $('#show2').hide();
+      });
+
+      $('#hide3').click(function () {
+        $('#esconde3').hide();
+        $('#show3').removeAttr('hidden');
+      });
+
+      $('#show3').click(function() {
+        $('#esconde3').show();
+        $('#show3').hide();
+      });
+
+      $('#hide4').click(function () {
+        $('#esconde4').hide();
+        $('#show4').removeAttr('hidden');
+      });
+
+      $('#show4').click(function() {
+        $('#esconde4').show();
+        $('#show4').hide();
+      });
+
+      $('#hide5').click(function () {
+        $('#esconde5').hide();
+        $('#show5').removeAttr('hidden');
+      });
+
+      $('#show5').click(function() {
+        $('#esconde5').show();
+        $('#show5').hide();
+      });
+
+      $('#hide6').click(function () {
+        $('#esconde6').hide();
+        $('#show6').removeAttr('hidden');
+      });
+
+      $('#show6').click(function() {
+        $('#esconde6').show();
+        $('#show6').hide();
+      })
+    });
+  </script>
+
   <style>
     nav {
       margin-top: auto;
@@ -167,8 +231,12 @@
         <div style="margin-left: 10px; margin-top: 80px;" class="container">
           <div class="row">
             <div class="col-sm">
-              <div class="container info">
+              <!-- Mostra conteúdo da div -->
+              <button id="show" hidden>Desfazer</button>
+              <div class="container info" id="esconde">
                 <img style="margin-left: 20px;" width="60%" src="img/erp-para-confeccao-icon.svg" alt="">
+                <!-- Esconde conteúdo da div -->
+                <button id="hide">X</button>
                 <!-- Aciona modal -->
                 <label id="confeccao" data-toggle="modal" data-target="#ModalCentralizadoConfeccao">Informações</label>
                 <!-- Modal -->
@@ -222,8 +290,12 @@
               </div>
             </div>
             <div class="col-sm">
-              <div class="container info">
+              <!-- Mostra conteúdo da div -->
+              <button id="show2" hidden>Desfazer</button>
+              <div class="container info" id="esconde2">
                 <img width="60%" src="img/erp-rede-de-lojas-icon.svg" alt="Erp para Lojas" style="margin-left: 50px;">
+                <!-- Esconde conteúdo da div -->
+                <button id="hide2">X</button>
                 <label id="lojas" data-toggle="modal" data-target="#ModalCentralizadoLojas">Informações</label>
                 <!-- Modal -->
                 <div class="modal fade" id="ModalCentralizadoLojas" tabindex="-1" role="dialog"
@@ -231,7 +303,8 @@
                   <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h3 class="modal-title" id="TituloModalCentralizado" style="margin-left: 130px;">Erp para Lojas</h3>
+                        <h3 class="modal-title" id="TituloModalCentralizado" style="margin-left: 130px;">Erp para Lojas
+                        </h3>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                           <span aria-hidden="true">&times;</span>
                         </button>
@@ -272,8 +345,12 @@
               </div>
             </div>
             <div class="col-sm">
-              <div class="container info">
-                <img width="60%" src="img/sistema-para-distribuidoras-icon.svg" alt="Sistema para Distribuidora" style="margin-left: 40px;" >
+              <!-- Mostra conteúdo da div -->
+              <button id="show3" hidden>Desfazer</button>
+              <div class="container info" id="esconde3">
+                <img width="60%" src="img/sistema-para-distribuidoras-icon.svg" alt="Sistema para Distribuidora" style="margin-left: 40px;">
+                <!-- Esconde conteúdo da div -->
+                <button id="hide3">X</button>
                 <label id="dist" data-toggle="modal" data-target="#ModalCentralizadoDist">Informações</label>
                 <!-- Modal -->
                 <div class="modal fade" id="ModalCentralizadoDist" tabindex="-1" role="dialog"
@@ -288,12 +365,14 @@
                         </button>
                       </div>
                       <div class="modal-body">
-                        <img width="40%" src="img/sistema-para-distribuidoras-icon.svg" alt="" style="margin-left: 130px;">
+                        <img width="40%" src="img/sistema-para-distribuidoras-icon.svg" alt=""
+                          style="margin-left: 130px;">
                         <span class="text-justify">
                           <p style="font-weight: 300; font-size: 1rem; line-height: 1.6; margin-bottom: 1.25rem;">
                             Nosso sistema ERP para distribuidoras fornece soluções práticas para gestão diária de uma
-                            distribuidora, como automação da digitação de pedidos, controle financeiro, rotas de entrega, 
-                            controle financeiro total, gestão do estoque, automação do faturamento, 
+                            distribuidora, como automação da digitação de pedidos, controle financeiro, rotas de
+                            entrega,
+                            controle financeiro total, gestão do estoque, automação do faturamento,
                             alem dos complicados cálculos de ICMS substituto.
                           </p>
                         </span>
@@ -329,8 +408,12 @@
         <div style="margin-left: 10px; margin-top: 80px;" class="container">
           <div class="row">
             <div class="col-sm">
-              <div class="container info">
-                <img style="margin-left: 20px;" width="60%" src="img/cad-para-confeccao-icon.svg" alt="">
+              <!-- Mostra conteúdo da div -->
+              <button id="show4" hidden>Desfazer</button>
+              <div class="container info" id="esconde4">
+                <img style="margin-left: 20px;" width="60%" src="img/cad-para-confeccao-icon.svg" alt="CAD para Confecção">
+                <!-- Esconde conteúdo da div -->
+                <button id="hide4">X</button>
                 <label id="cad" data-toggle="modal" data-target="#ModalCentralizadoCad">Informações</label>
                 <!-- Modal -->
                 <div class="modal fade" id="ModalCentralizadoCad" tabindex="-1" role="dialog"
@@ -338,13 +421,15 @@
                   <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h3 class="modal-title" id="TituloModalCentralizado" style="margin-left: 90px;">CAD para Confecção</h3>
+                        <h3 class="modal-title" id="TituloModalCentralizado" style="margin-left: 90px;">CAD para
+                          Confecção</h3>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
-                        <img width="40%" src="img/cad-para-confeccao-icon.svg" alt="CAD para Confecção" style="margin-left: 130px;">
+                        <img width="40%" src="img/cad-para-confeccao-icon.svg" alt="CAD para Confecção"
+                          style="margin-left: 130px;">
                         <span class="text-justify">
                           <p style="font-weight: 300; font-size: 1rem; line-height: 1.6; margin-bottom: 1.25rem;">
                             RZ CAD Têxtil é o CAD para confecção ideal, tem a melhor relação custo benefício do mercado,
@@ -375,8 +460,12 @@
               </div>
             </div>
             <div class="col-sm">
-              <div class="container info">
-                <img style="margin-left: 30px;" width="60%" src="img/plotter-para-confeccao-icon.svg" alt="" srcset="">
+              <!-- Mostra conteúdo da div -->
+              <button id="show5" hidden>Desfazer</button>
+              <div class="container info" id="esconde5">
+                <img style="margin-left: 30px;" width="60%" src="img/plotter-para-confeccao-icon.svg" alt="Plotter para Confecção">
+                <!-- Esconde conteúdo da div -->
+                <button id="hide5">X</button>
                 <label id="plotter" data-toggle="modal" data-target="#ModalCentralizadoPlot">Informações</label>
                 <!-- Modal -->
                 <div class="modal fade" id="ModalCentralizadoPlot" tabindex="-1" role="dialog"
@@ -384,13 +473,15 @@
                   <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h3 class="modal-title" id="TituloModalCentralizado" style="margin-left: 90px;">CAD para Confecção</h3>
+                        <h3 class="modal-title" id="TituloModalCentralizado" style="margin-left: 90px;">CAD para
+                          Confecção</h3>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
-                        <img style="margin-left: 130px;" width="40%" src="img/plotter-para-confeccao-icon.svg" alt="CAD para Confecção">
+                        <img style="margin-left: 130px;" width="40%" src="img/plotter-para-confeccao-icon.svg"
+                          alt="CAD para Confecção">
                         <span class="text-justify">
                           <p style="font-weight: 300; font-size: 1rem; line-height: 1.6; margin-bottom: 1.25rem;">
                             RZ CAD Têxtil é o CAD para confecção ideal, tem a melhor relação custo benefício do mercado,
@@ -421,8 +512,12 @@
               </div>
             </div>
             <div class="col-sm">
-              <div class="container info">
-                <img width="60%" src="img/venda-a-pronta-entrega-icon.svg" alt="Venda a Pronta Entrega" style="margin-left: 40px;">
+              <!-- Mostra conteúdo da div -->
+              <button id="show6" hidden>Desfazer</button>
+              <div class="container info" id="esconde6">
+                <img width="60%" src="img/venda-a-pronta-entrega-icon.svg" alt="Venda a Pronta Entrega" style="margin-left: 40px;" alt="Venda a Pronta Entrega">
+                <!-- Esconde conteúdo da div -->
+                <button id="hide6">X</button>
                 <label id="venda" data-toggle="modal" data-target="#ModalCentralizadoVenda">Informações</label>
                 <!-- Modal -->
                 <div class="modal fade" id="ModalCentralizadoVenda" tabindex="-1" role="dialog"
@@ -430,13 +525,15 @@
                   <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h3 class="modal-title" id="TituloModalCentralizado" style="margin-left: 90px;">Venda a Pronta Entrega</h3>
+                        <h3 class="modal-title" id="TituloModalCentralizado" style="margin-left: 90px;">Venda a Pronta
+                          Entrega</h3>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
-                        <img width="40%" src="img/venda-a-pronta-entrega-icon.svg" alt="Venda a Pronta Entrega" style="margin-left: 140px;">
+                        <img width="40%" src="img/venda-a-pronta-entrega-icon.svg" alt="Venda a Pronta Entrega"
+                          style="margin-left: 140px;">
                         <span class="text-justify">
                           <p style="font-weight: 300; font-size: 1rem; line-height: 1.6; margin-bottom: 1.25rem;">
                             Vender a pronta entrega requer mais que apenas um solução eficiente de força de vendas,
