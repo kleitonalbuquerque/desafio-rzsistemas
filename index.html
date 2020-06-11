@@ -19,65 +19,65 @@
     crossorigin="anonymous"></script>
   <script>
     $(document).ready(function () {
-      $('#hide').click(function () {
-        $('#esconde').hide();
-        $('#show').removeAttr('hidden');
+      $('#batata').hide();
+      $('#banana').click(function() {
+        $('#manga').hide();
+        $('#batata').show();
+        $('#batata').click(function() {
+          $('#manga').show();
+          $('#batata').hide();
+        });
+      });
+    
+      $('#batata2').hide();
+      $('#banana2').click(function() {
+        $('#manga2').hide();
+        $('#batata2').show();
+        $('#batata2').click(function() {
+          $('#manga2').show();
+          $('#batata2').hide();
+        });
       });
 
-      $('#show').click(function() {
-        $('#esconde').show();
-        $('#show').hide();
+      $('#batata3').hide();
+      $('#banana3').click(function() {
+        $('#manga3').hide();
+        $('#batata3').show();
+        $('#batata3').click(function() {
+          $('#manga3').show();
+          $('#batata3').hide();
+        });
       });
 
-      $('#hide2').click(function () {
-        $('#esconde2').hide();
-        $('#show2').removeAttr('hidden');
+      $('#batata4').hide();
+      $('#banana4').click(function() {
+        $('#manga4').hide();
+        $('#batata4').show();
+        $('#batata4').click(function() {
+          $('#manga4').show();
+          $('#batata4').hide();
+        });
+      });      
+
+      $('#batata5').hide();
+      $('#banana5').click(function() {
+        $('#manga5').hide();
+        $('#batata5').show();
+        $('#batata5').click(function() {
+          $('#manga5').show();
+          $('#batata5').hide();
+        });
       });
 
-      $('#show2').click(function() {
-        $('#esconde2').show();
-        $('#show2').hide();
+      $('#batata6').hide();
+      $('#banana6').click(function() {
+        $('#manga6').hide();
+        $('#batata6').show();
+        $('#batata6').click(function() {
+          $('#manga6').show();
+          $('#batata6').hide();
+        });
       });
-
-      $('#hide3').click(function () {
-        $('#esconde3').hide();
-        $('#show3').removeAttr('hidden');
-      });
-
-      $('#show3').click(function() {
-        $('#esconde3').show();
-        $('#show3').hide();
-      });
-
-      $('#hide4').click(function () {
-        $('#esconde4').hide();
-        $('#show4').removeAttr('hidden');
-      });
-
-      $('#show4').click(function() {
-        $('#esconde4').show();
-        $('#show4').hide();
-      });
-
-      $('#hide5').click(function () {
-        $('#esconde5').hide();
-        $('#show5').removeAttr('hidden');
-      });
-
-      $('#show5').click(function() {
-        $('#esconde5').show();
-        $('#show5').hide();
-      });
-
-      $('#hide6').click(function () {
-        $('#esconde6').hide();
-        $('#show6').removeAttr('hidden');
-      });
-
-      $('#show6').click(function() {
-        $('#esconde6').show();
-        $('#show6').hide();
-      })
     });
   </script>
 
@@ -232,11 +232,11 @@
           <div class="row">
             <div class="col-sm">
               <!-- Mostra conteúdo da div -->
-              <button id="show" hidden>Desfazer</button>
-              <div class="container info" id="esconde">
+              <button id="batata">Desfazer</button>
+              <div class="container info" id="manga">
                 <img style="margin-left: 20px;" width="60%" src="img/erp-para-confeccao-icon.svg" alt="">
                 <!-- Esconde conteúdo da div -->
-                <button id="hide">X</button>
+                <button id="banana">X</button>
                 <!-- Aciona modal -->
                 <label id="confeccao" data-toggle="modal" data-target="#ModalCentralizadoConfeccao">Informações</label>
                 <!-- Modal -->
@@ -291,11 +291,11 @@
             </div>
             <div class="col-sm">
               <!-- Mostra conteúdo da div -->
-              <button id="show2" hidden>Desfazer</button>
-              <div class="container info" id="esconde2">
+              <button id="batata2">Desfazer</button>
+              <div class="container info" id="manga2">
                 <img width="60%" src="img/erp-rede-de-lojas-icon.svg" alt="Erp para Lojas" style="margin-left: 50px;">
                 <!-- Esconde conteúdo da div -->
-                <button id="hide2">X</button>
+                <button id="banana2">X</button>
                 <label id="lojas" data-toggle="modal" data-target="#ModalCentralizadoLojas">Informações</label>
                 <!-- Modal -->
                 <div class="modal fade" id="ModalCentralizadoLojas" tabindex="-1" role="dialog"
@@ -346,11 +346,11 @@
             </div>
             <div class="col-sm">
               <!-- Mostra conteúdo da div -->
-              <button id="show3" hidden>Desfazer</button>
-              <div class="container info" id="esconde3">
+              <button id="batata3" >Desfazer</button>
+              <div class="container info" id="manga3">
                 <img width="60%" src="img/sistema-para-distribuidoras-icon.svg" alt="Sistema para Distribuidora" style="margin-left: 40px;">
                 <!-- Esconde conteúdo da div -->
-                <button id="hide3">X</button>
+                <button id="banana3">X</button>
                 <label id="dist" data-toggle="modal" data-target="#ModalCentralizadoDist">Informações</label>
                 <!-- Modal -->
                 <div class="modal fade" id="ModalCentralizadoDist" tabindex="-1" role="dialog"
@@ -409,11 +409,11 @@
           <div class="row">
             <div class="col-sm">
               <!-- Mostra conteúdo da div -->
-              <button id="show4" hidden>Desfazer</button>
-              <div class="container info" id="esconde4">
+              <button id="batata4" >Desfazer</button>
+              <div class="container info" id="manga4">
                 <img style="margin-left: 20px;" width="60%" src="img/cad-para-confeccao-icon.svg" alt="CAD para Confecção">
                 <!-- Esconde conteúdo da div -->
-                <button id="hide4">X</button>
+                <button id="banana4">X</button>
                 <label id="cad" data-toggle="modal" data-target="#ModalCentralizadoCad">Informações</label>
                 <!-- Modal -->
                 <div class="modal fade" id="ModalCentralizadoCad" tabindex="-1" role="dialog"
@@ -461,11 +461,11 @@
             </div>
             <div class="col-sm">
               <!-- Mostra conteúdo da div -->
-              <button id="show5" hidden>Desfazer</button>
-              <div class="container info" id="esconde5">
+              <button id="batata5" >Desfazer</button>
+              <div class="container info" id="manga5">
                 <img style="margin-left: 30px;" width="60%" src="img/plotter-para-confeccao-icon.svg" alt="Plotter para Confecção">
                 <!-- Esconde conteúdo da div -->
-                <button id="hide5">X</button>
+                <button id="banana5">X</button>
                 <label id="plotter" data-toggle="modal" data-target="#ModalCentralizadoPlot">Informações</label>
                 <!-- Modal -->
                 <div class="modal fade" id="ModalCentralizadoPlot" tabindex="-1" role="dialog"
@@ -512,11 +512,11 @@
             </div>
             <div class="col-sm">
               <!-- Mostra conteúdo da div -->
-              <button id="show6" hidden>Desfazer</button>
-              <div class="container info" id="esconde6">
+              <button id="batata6" >Desfazer</button>
+              <div class="container info" id="manga6">
                 <img width="60%" src="img/venda-a-pronta-entrega-icon.svg" alt="Venda a Pronta Entrega" style="margin-left: 40px;" alt="Venda a Pronta Entrega">
                 <!-- Esconde conteúdo da div -->
-                <button id="hide6">X</button>
+                <button id="banana6">X</button>
                 <label id="venda" data-toggle="modal" data-target="#ModalCentralizadoVenda">Informações</label>
                 <!-- Modal -->
                 <div class="modal fade" id="ModalCentralizadoVenda" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
